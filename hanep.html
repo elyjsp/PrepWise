@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>PrepWise</title>
+    <style>
+      .brand-logo {
+        font-family: 'Alata' !important;
+      }
+      section {
+        background-size: cover;
+        background-position: center;
+      }
+      #home {
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        padding: 50px 0;
+        background-color: #4a148c;
+      }
+      #home img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.35;
+      }
+      #wisey .row {
+        margin-bottom: 0;
+      }
+      .bg {
+        height: 500px;
+        width: 100%;
+        background-image: url('https://placehold.co/1200x500/f5f5dc/333333?text=PrepWise+Banner+Placeholder');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .friendlyowl {
+        font-size: 20px;
+        text-align: justify;
+      }
+      #prepwise {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+      }
+    </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="purple lighten-2">
+      <div class="nav-wrapper container">
+        <a href="#" id="prepwise" class="brand-logo">PrepWise</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="PrepWise.html">Home</a></li>
+            <li><a href="#aboutinhome">About</a></li>
+            <li><a href="#wisey">Services</a></li>
+            <li><a href="#wisey">Our Story</a></li>
+            <li><a href="#aboutinhome">Contact Us</a></li>
+            <li><a href="#!" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Instagram"> 
+                <i class="fab fa-instagram"></i>
+                </a></li>
+            <li><a href="#!" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Facebook"> 
+                <i class="fab fa-facebook"></i>
+                </a></li>
+            <li><a href="#!" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Tiktok"> 
+                <i class="fab fa-tiktok"></i>
+                </a></li>
+        </ul>
+        <ul class="sidenav yellow lighten-3" id="mobile-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutinhome">About</a></li>
+          <li><a href="#wisey">Services</a></li>
+          <li><a href="#aboutinhome">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container center-align section" style="position: relative; z-index: 1;">
+      <h2 class="yellow-text text-lighten-1">The Wise way to Prep</h2>
+      <h5 class="white-text text-lighten-1" style="margin-bottom: 20px;">PrepWise: Your semester, sorted</h5>
+      <a href="#!" class="btn yellow lighten-3 purple-text text-darken-2" style="margin: 5px;">Sign Up</a>
+      <a href="#!" class="btn yellow lighten-3 purple-text text-darken-2" style="margin: 5px;">Log In</a>
+      <a href="#wisey" class="btn yellow lighten-3 purple-text text-darken-2" style="margin: 5px;">Find Your Plan</a>
+    </div>
+    <img src="https://placehold.co/1440x600/6a1b9a/ffffff?text=Background+Animation+GIF" alt="Background GIF" onerror="this.src='https://placehold.co/1440x600/4a148c/ffffff?text=PrepWise';">
+  </section>
+
+  <!-- Section 2: Wisey -->
+  <section id="wisey" class="white">
+    <div class="container" style="padding-top: 40px; padding-bottom: 30px;">
+      <div class="row valign-wrapper" style="flex-wrap: wrap;">
+        <div class="wisie white col s12 m9">
+          <h3 class="center" style="font-family: 'Alata', sans-serif;">Hi, I am Wisey!</h3>
+          <p class="friendlyowl">Wisey is PrepWise’s friendly owl and your personal study buddy. With her graduation cap and round glasses, she’s always ready to help you plan your week, pick the right study technique, and keep track of your deadlines. Wisey believes that studying is easier when you have a plan, and a little encouragement along the way. She and her PrepBuddies are here to help you work toward the marks you want to achieve.</p>
+        </div>
+        <div class="col s12 m3 center-align">
+          <img src="imgs/prepwise.home.png" class="responsive-img circle" alt="wisey">
+        </div>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="aboutinhome" class="section container scrollspy">
+    <div class="row"> 
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4" style="font-family: 'Alata', sans-serif;">About</h2>
+        <p>PrepWise helps students plan, study, and succeed. Choose a study plan, try a new technique, and keep your deadlines in check, all in one place. With Wisey by your side, studying feels a little less stressful and a lot more organized.</p>
+        <p>If there is anything you want us to improve please send your suggestions and concern. This is highly appreciated by our team!</p>
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <form onsubmit="event.preventDefault(); M.toast({html: 'Message sent successfully!'});">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email" required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <p>Enjoy using PrepWise?:</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Yes, I do!</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Could be better?</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button type="submit" class="btn purple darken-2">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footlong" class="page-footer purple lighten-5">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 offset-l2 s12">
+          <h5 class="purple-text text-darken-4" style="font-family: 'Alata', sans-serif;">About PrepWise</h5>
+          <p class="black-text">
+            PrepWise is a study planner and resource hub made for junior high, senior high,
+            and college students. We help you organize your semester with study plans,
+            proven study techniques, and a calendar for your deadlines. Along the way,
+            Wisey, your friendly study buddy, is here to guide you to the marks you
+            want to achieve.</p>
+          <p class="purple-text text-darken-4"><b>PrepWise: Your semester, sorted.</b></p>
+        </div>
+        
+        <div class="col l3 offset-l2 s12">
+          <h5 class="purple-text text-darken-4" style="font-family: 'Alata', sans-serif;">Connect</h5>
+          <ul>
+            <li><a class="purple-text text-darken-4" href="#!">Facebook</a></li>
+            <li><a class="purple-text text-darken-4" href="#!">Instagram</a></li>
+            <li><a class="purple-text text-darken-4" href="#!">TikTok</a></li>
+            <li><a class="purple-text text-darken-4" href="#aboutinhome">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="copyright-master" class="footer-copyright purple darken-4">
+      <div id="copyright" class="container center-align white-text">&copy; 2026 PrepWise</div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+      });
+  </script>
+    
+</body>
+</html>

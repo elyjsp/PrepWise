@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charetset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>PrepWise</title>
+    <style>
+      .brand-logo{
+            font-family: 'Alata' !important;
+      }
+      header{
+            background-color: #ba68c8 purple lighten-2;
+            }
+      section{
+            background-size: cover;
+            background-position: center;
+            }
+      .h2fonts {
+            font-family: 'Alata' !important;
+            text-shadow: 1px 1px 5px #000;
+              }
+      .h5fonts {
+            font-family: 'Alata' !important;
+              }
+      #home {
+          position: relative;
+          overflow: hidden;
+          z-index: 0;
+          img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+          }
+            }
+      .bg {
+        height: 500px;
+          }
+      .friendlyowl {
+        font-size: 20px;
+        text-align: justify;
+        text-shadow: 1px 1px 5px #000;
+                   }
+      #prepwise{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-shadow:color(from color srgb r g b);
+              }
+      #home {
+          background: url(purple1.mp4);
+            }
+      .christian-garcia {
+          display: flex;
+          background-size: cover;
+          width: 1535px;
+          transform: translateY(-380px);
+                        }
+        .wisey {
+          transform: translateY(-410px);
+              }
+    </style>
+</head>
+
+<!--navbar-->
+<header>
+<nav class="purple lighten-2">
+<div class="nav-wrapper container">
+    <a href="#" id="prepwise" class="brand-logo">PrepWise</a>
+    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="PrepWise.html">Home</a></li>
+        <li><a href="#aboutinhome">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mastermind.html">Our Story</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+            </a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Facebook"> 
+            <i class="fab fa-facebook"></i>
+            </a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Tiktok"> 
+            <i class="fab fa-tiktok"></i>
+            </a></li>
+        </ul>
+        <ul class="sidenav yellow lighten-3" id="mobile-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section pare bago ako mabaliw dito -->
+<section id="home" class="">
+    <div class="container center-align section">
+<h2 class="h2fonts yellow-text text-lighten-1">The Wise way to Prep</h2>
+<h5 class="h5fonts purple-text text-lighten-2">PrepWise: Your semester, sorted</h5>
+<a href="signup.html" class="btn yellow lighten-3 purple-text text-darken-2">Sign Up</a>
+<a href="login.html" class="btn yellow lighten-3 purple-text text-darken-2">Log In</a>
+<a href="plans.html" class="btn yellow lighten-3 purple-text text-darken-2">Find Your Plan</a>
+<img src="imgs/purple1.gif" alt="">
+    </div>
+</section>
+
+
+<!--Section 2 -->
+<section id="wisey" class="white">
+<div class="row">
+  <div class="wisie white col s12 m6  ">
+    <h3 class="center">Hi, I am Wisey!</h3>
+    <div class="bg">
+    <p class="friendlyowl left col s12 l8 push-l2">Wisey is PrepWise’s friendly owl and your personal study buddy. With her graduation cap and round glasses, she’s always ready to help you plan your week, pick the right study technique, and keep track of your deadlines. Wisey believes that studying is easier when you have a plan, and a little encouragement along the way. She and her PrepBuddies are here to help you work toward the marks you want to achieve.</p>
+    <img src="imgs/wisey-lavender-waving.png" alt="Wisey" class="col s12 l8 push-l12 wisey">
+  </div>
+  </div>
+</div>
+ <img src="imgs/prepwise.home.png" class="col s12 m12 christian-garcia">
+</section>
+
+
+
+<!--About -->
+<section id="aboutinhome" class="section container scrollspy">
+<div class="row"> 
+  <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">About</h2>
+        <p>PrepWise helps students plan, study, and succeed. Choose a study plan, try a new technique, and keep your deadlines in check, all in one place. With Wisey by your side, studying feels a little less stressful and a lot more organized.</p>
+        <p>If there is anything you want us to improve please send your suggestions and concern. This is highly appreciated by our team!</p>
+      </div>
+      <div class="col s2 l6 offset-l1">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+           <input type="email" id="email"> 
+            <label for="email">Your Email</label>  
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <p>Enjoy using PrepWise?:</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Yes, I do!</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Could be better?</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+</div>
+    </div>
+  </section>
+
+
+</section>
+
+
+
+<!-- footer -->
+  <footer id="footlong" class="page-footer purple lighten-5">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 offset-l2 s18">
+          <h5 class="purple-text text-darken-4">About PrepWise</h5>
+          <p class="black-text">
+            PrepWise is a study planner and resource hub made for junior high, senior high,
+            and college students. We help you organize your semester with study plans,
+            proven study techniques, and a calendar for your deadlines. Along the way,
+            Wisey, your friendly study buddy, is here to guide you to the marks you
+            want to achieve.</p>
+          <p class="purple-text text-darken-4">PrepWise: Your semester, sorted.</p>
+        </div>
+        
+        <div class="col l3 offset-l2 s12">
+          <h5 class="purple-text text-darken-4">Connect</h5>
+          <ul>
+            <li><a class="purple-text text-darken-4" href="#">Facebook</a></li>
+            <li><a class="purple-text text-darken-4" href="#">Instagram</a></li>
+            <li><a class="purple-text text-darken-4" href="#">TikTok</a></li>
+            <li><a class="purple-text text-darken-4" href="#">Email</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div id="copyright-master" class="footer-copyright purple darken-4">
+      <div id="copyright" class="container center-align">&copy; 2026 PrepWise</div>
+    </div>
+  </footer>
+
+
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.tooltipped').tooltip();
+          $('.scrollspy').scrollSpy();
+         });
+    </script>
+    
+</body>
+</html>

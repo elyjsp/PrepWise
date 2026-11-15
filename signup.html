@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Sign up</title>
+    <style>
+        nav {
+            background-color: #ba68c8;
+            text-align: justify-content: left;
+            font-family: 'Tahoma', sans-serif, bold;
+            }
+        .brand-logo{
+            font-family: 'Alata' !important;
+            margin-left: 5%;
+            font-weight: bolder;
+        }
+        .login{
+            font-family: 'Alata' !important;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        h4 {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic; 
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #termsfont {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(101, 0, 101);
+            }
+        #ac {
+            color: rgb(101, 0, 101);
+        }
+        .modal.content {
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            min-height: 100vh; 
+                        }
+        body { 
+            display: flex; 
+            min-height: 100vh; 
+            flex-direction: column; 
+            }
+        main { 
+            flex: 1 0 auto; 
+            }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-wrapper purple">
+        <a href="#" class="brand-logo">Prepwise | Sign Up</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="login.html" class="login">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- SIGN UP SECTION NGANI -->
+    <div class="container">
+        <form id="signup-form" novalidate>
+
+            <div class="signup-content">
+                <h4>Sign Up</h4>
+                <h3>Want to sign up? Fill up your information to PrepWise!</h3>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="su-email" type="email" required>
+                        <label for="su-email">Enter Your Email address</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="su-password" type="password" required>
+                        <label for="su-password">Enter Your Password</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">person</i>
+                        <input id="su-username" type="text" required>
+                        <label for="su-username">Create Your Username</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">cake</i>
+                        <input id="su-age" type="text" required>
+                        <label for="su-age">Enter Your Age</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">calendar_today</i>
+                        <input id="su-birthday" type="text" required>
+                        <label for="su-birthday">Enter Your Birthday</label>
+                    </div>
+
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">wc</i>
+                        <input id="su-gender" type="text" required>
+                        <label for="su-gender">Enter Your Gender</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">cake</i>
+                        <input id="su-year-level" type="text" required>
+                        <label for="su-year-level">Enter Year Level</label>
+                    </div>
+
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">school</i>
+                        <input id="su-school" type="text" required>
+                        <label for="su-school">Enter Your School</label>
+                    </div>
+                </div>
+            </div>
+    
+    
+           <!-- <div class="row">
+                <div class="input-field col s12">
+                    <label>
+                        <input type="checkbox" required />
+                        <span>I agree to the Terms and Conditions</span>
+                    </label>
+                </div>
+            </div>-->
+
+     <div class="container center-align section">
+        <h2>Finished Signing up for PrepWise?</h2>
+        <a id="termsfont" href="#terms" class="btn  yellow lighten-3 modal-trigger">Terms & Conditions</a>
+        <div class="modal" id="terms">
+            <div class="modal-content">
+               <h4 class="purple-text">Terms & Conditions</h4>
+        <p>
+        Welcome to PrepWise! These Terms and Conditions explain the rules for using our website, including our study plans, study techniques, calendar, and our study assistant, Wisey. By creating an account or using PrepWise, you agree to these terms. If you do not agree, please do not use the website. <p>
+            
+        <p>1. About PrepWise: PrepWise is a study planning website created by Ellyzabeth Peralta as Midterm and Final requirement for Programming Logic and Design. It offers study plans, study techniques, and tools to help students organize their studies.</p>
+            
+        <p>2. Who can use PrepWisePrepWise is for junior high school, senior high school, and college students. If you are under 18, you should ask a parent or guardian for permission before creating an account and giving us your information. By signing up, you confirm that the information you give is true and that you have the permission needed to use this website. </p>
+
+        <p>3. Your account You must give an accurate email address, age, and education level when you sign up. You are responsible for keeping your password private and for everything done with your account.Please tell us right away at prepwise@gmail.com if you think someone else is using your account. One person should use one account.</p>
+            
+        <p>4. Information we collect When you sign up, we ask for your email address, password, age, sex, and education level. We use this information to create your account and to suggest study plans that suit you. We will not sell your personal information. Please read our Privacy Policy to learn how your information is collected, used, stored, and protected. </p>
+            
+        <p>5. Study plans and advice The study plans, techniques, and tips on PrepWise are for general educational purposes only. Everyone learns differently, so we cannot promise that they will give you specific grades or exam results. They are not a replacement for advice from your teachers, school, or other professionals. </p>
+
+        <p>6. Wisey, our study assistant Wisey is an automated assistant. Its answers may sometimes be incomplete or incorrect, so please double-check important information with your teachers, textbooks, or school resources. Please do not share passwords or sensitive personal details in the chat. </p>
+
+        <p>7. Acceptable use When using PrepWise, you agree not to: use someone else's account or pretend to be another person; post or send anything harmful, offensive, or unlawful; try to hack, disrupt, or overload the website; copy, sell, or misuse the website's content without permission; use PrepWise to cheat on exams or to break your school's rules.
+
+        <p>8. Ownership and content The PrepWise name, logo, Wisey character, designs, and original content belong to Ellyzabeth Peralta and to PrepWiseBuddies. You may use them only to access and use the website for your personal studies. Some study techniques are widely known methods that we describe in our own words.</p>
+            
+        <p>9. Links to other websites PrepWise may link to other websites. We do not control them and are not responsible for their content or privacy practices.</p>
+            
+        <p>10. Availability and changes to the website We try to keep PrepWise running smoothly, but we cannot guarantee that it will always be available or free of errors. We may change, pause, or remove features at any time.</p>
+            
+        <p>11. Disclaimer and limit of responsibility PrepWise is provided "as is" and "as available." To the fullest extent allowed by law, Ellyzabeth Peralta and to PrepWiseBuddies.  is not responsible for any loss or damage that comes from using, or being unable to use, the website, including missed deadlines or exam results.</p>
+            
+        <p>12. Ending your account You may stop using PrepWise or ask us to delete your account at any time by emailing prepwise@gmail.com We may suspend or close accounts that break these terms.</p>
+            
+        <p>13. Changes to these terms We may update these terms from time to time. When we do, we will change the "Last updated" date at the top. If you keep using PrepWise after the update, you accept the new terms.</p>
+            
+        <p>14. Governing law These terms are governed by the laws of Phillippines.</p>
+            
+        <p>15. Contact us. Questions about these terms? Email us at prepwise@gmailcom.</p>
+
+                <div class="modal-footer center-align section">
+                    <a href="#" id="ac" class="modal-close btn yellow lighten-3">Agree & Close</a>
+                </div>
+            </div>
+        </div>       
+    </div>
+    </form>
+    </div>
+
+        <!-- footer -->
+  <footer id="footlong" class="page-footer purple lighten-5">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 offset-l2 s18">
+          <h5 class="purple-text text-darken-4">About PrepWise</h5>
+          <p class="black-text">
+            PrepWise is a study planner and resource hub made for junior high, senior high,
+            and college students. We help you organize your semester with study plans,
+            proven study techniques, and a calendar for your deadlines. Along the way,
+            Wisey, your friendly study buddy, is here to guide you to the marks you
+            want to achieve.</p>
+          <p class="purple-text text-darken-4">PrepWise: Your semester, sorted.</p>
+        </div>
+        
+        <div class="col l3 offset-l2 s12">
+          <h5 class="purple-text text-darken-4">Connect</h5>
+          <ul>
+            <li><a class="purple-text text-darken-4" href="#">Facebook</a></li>
+            <li><a class="purple-text text-darken-4" href="#">Instagram</a></li>
+            <li><a class="purple-text text-darken-4" href="#">TikTok</a></li>
+            <li><a class="purple-text text-darken-4" href="#">Email</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div id="copyright-master" class="footer-copyright purple darken-4">
+      <div id="copyright" class="container center-align">&copy; 2026 PrepWise</div>
+    </div>
+  </footer>
+
+
+<script src="jquery/jquery-3.3.1.min.js.txt"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script> 
+</body>
+</html><style>
+</style>

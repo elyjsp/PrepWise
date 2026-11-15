@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>PrepWise Login</title>
+    <style>
+        nav {
+            background-color: #ba68c8;
+            text-align: justify-content: left;
+            }
+        .brand-logo{
+            margin-left: 5%;
+                    }
+        i{
+            color: rgba(0, 0, 0, 0.87);
+            }
+        h2 {
+            color:black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            }
+        h4 {
+            color:black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h5 {
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{
+           line-height: 200%;
+        }
+        #termsfont {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(101, 0, 101);
+            }
+
+    </style>
+</head>
+<body>
+  
+    <!-- NAVBAR -->
+<nav>
+    <div class="nav-wrapper purple">
+        <a href="#" class="brand-logo"> Prepwise | Login</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="PrepWise.html">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- LOGIN SECTION -->
+    <div class="container">
+        <form id="login-form" novalidate>
+
+            <div class="login-content">
+                <h4>Login</h4>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="login-email" type="email" required>
+                        <label for="login-email">Your Email address</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">person</i>
+                        <input id="login-username" type="text" required>
+                        <label for="login-username">Your Username</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="login-password" type="password" required>
+                        <label for="login-password">Your Password</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Button for Log In-->
+     
+     <div class="container center-align section">
+        <h2>Done Logging In?</h2>
+        <a id="termsfont" href="#terms" class="btn  yellow lighten-3 modal-trigger">Log In</a>
+        <div class="modal" id="terms">
+            <div class="modal-content">
+               <h4 class="purple-text">Log In</h4>
+               <h5 class="sakses">Successfully logged in! Welcome to PrepWise, your semester, sorted.</h5>
+
+            
+                <div class="modal-footer center-align section">
+                    <a href="#" class="modal-close btn yellow lighten-3">Agree & Close</a>
+                </div>
+            </div>
+        </div>       
+    </div>
+    </form>
+    </div>
+    
+  <!-- footer -->
+  <footer id="footlong" class="page-footer purple lighten-5">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 offset-l2 s18">
+          <h5 class="purple-text text-darken-4">About PrepWise</h5>
+          <p class="black-text">
+            PrepWise is a study planner and resource hub made for junior high, senior high,
+            and college students. We help you organize your semester with study plans,
+            proven study techniques, and a calendar for your deadlines. Along the way,
+            Wisey, your friendly study buddy, is here to guide you to the marks you
+            want to achieve.</p>
+          <p class="purple-text text-darken-4">PrepWise: Your semester, sorted.</p>
+        </div>
+        
+        <div class="col l3 offset-l2 s12">
+          <h5 class="purple-text text-darken-4">Connect</h5>
+          <ul>
+            <li><a class="purple-text text-darken-4" href="#">Facebook</a></li>
+            <li><a class="purple-text text-darken-4" href="#">Instagram</a></li>
+            <li><a class="purple-text text-darken-4" href="#">TikTok</a></li>
+            <li><a class="purple-text text-darken-4" href="#">Email</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div id="copyright-master" class="footer-copyright purple darken-4">
+      <div id="copyright" class="container center-align">&copy; 2026 PrepWise</div>
+    </div>
+  </footer>
+
+    <script src="jquery/jquery-3.3.1.min.js.txt"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+        });
+    </script> 
+
+</body>
+</html>

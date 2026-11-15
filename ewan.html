@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+:root { --pw-purple: #8615a8; --pw-ink: #261b2d; --pw-muted: #716879; --pw-border: #e7dfeb; --pw-lilac: #f8f3fb; }
+body { background: #f8f5fa; color: var(--pw-ink); font-family: 'Alata', 'Segoe UI', sans-serif; }
+nav { background: var(--pw-purple) !important; box-shadow: 0 3px 14px rgba(56, 21, 65, .16); }
+.brand-logo { margin-left: 0 !important; font-size: clamp(1.25rem, 3vw, 1.8rem) !important; white-space: nowrap; }
+nav .nav-wrapper { padding: 0 clamp(16px, 5vw, 72px); }
+nav .login { font-size: 1rem; }
+body > .container { width: min(100% - 32px, 760px); margin: 36px auto 56px; }
+#signup-form { padding: clamp(24px, 5vw, 48px); border: 1px solid var(--pw-border); border-radius: 22px; background: #fff; box-shadow: 0 16px 44px rgba(52, 27, 64, .09); }
+.signup-content h4 { margin: 0 0 8px; color: var(--pw-ink); font-size: clamp(2.2rem, 5vw, 3rem); letter-spacing: -.04em; }
+.signup-content h3 { margin: 0 0 28px; color: var(--pw-muted); font-size: 1rem; font-weight: 400; font-style: normal; }
+#signup-form .row { margin: 0; }
+#signup-form .input-field { margin: 0 0 12px; padding: 0; }
+#signup-form .input-field .prefix { top: .72rem; color: #8b5b9c; font-size: 1.35rem; }
+#signup-form .input-field input { box-sizing: border-box; height: 3.25rem; margin: 0; padding-left: 3.25rem; border: 1px solid var(--pw-border); border-radius: 11px; background: #fcfaff; box-shadow: none; transition: border-color .18s, box-shadow .18s, background .18s; }
+#signup-form .input-field input:focus { border: 1px solid var(--pw-purple); background: #fff; box-shadow: 0 0 0 3px rgba(134, 21, 168, .12); }
+#signup-form .input-field label { left: 3.95rem; color: #81788a; }
+#signup-form .input-field label.active { color: var(--pw-purple); }
+#signup-form .input-field .prefix ~ label { margin-left: 0; }
+#signup-form .container.center-align { width: 100%; margin: 24px 0 0; padding: 0; }
+#signup-form h2 { margin: 0 0 14px; font-size: 1.25rem; color: var(--pw-ink); }
+#termsfont, #ac { border-radius: 9px; background-color: #f1e3f7 !important; color: #651184; font-weight: 700; box-shadow: none; }
+#termsfont:hover, #ac:hover { background-color: #e8d2f1 !important; }
+#terms.modal { width: min(90%, 760px); max-height: 82%; border-radius: 18px; }
+#terms .modal-content { padding: 28px; }
+#terms .modal-content p { line-height: 1.65; }
+.page-footer { background: #f0e5f5 !important; color: var(--pw-ink); }
+.page-footer .footer-copyright { background: var(--pw-purple) !important; }
+@media (max-width: 600px) {
+  nav .nav-wrapper { padding: 0 16px; }
+  nav .brand-logo { position: static !important; transform: none !important; }
+  body > .container { width: calc(100% - 24px); margin: 18px auto 32px; }
+  #signup-form { padding: 24px 18px; border-radius: 16px; }
+  .signup-content h3 { margin-bottom: 20px; }
+  #signup-form .input-field { margin-bottom: 8px; }
+  footer .container { width: calc(100% - 32px); }
+}

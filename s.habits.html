@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>PrepWise | Study Habits</title> 
+    <style>
+        body { 
+            background: #f3e5f5; 
+            }
+        #header-bg2 {
+            background-color: transparent;   
+        }
+        .s\.habits{                        
+            font-family: 'Alata' !important;
+            margin-left: 5%;
+            font-weight: bolder;
+            font-size: larger;
+            color: rgb(101, 0, 101);
+                 }
+        /* GALLERY BG BAKS, NAKAILANG ULIT NA AKO PONYETA */
+        .gallery-bg-section {
+            position: relative;
+            background: linear-gradient(135deg, #e093f1, #f7e981);
+            padding: 40px 20px;
+                            }
+        .gallery-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 30px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 12px 24px rgba(201, 106, 4, 0.755);
+        }
+        /* 'yung banner' */
+        .Study-Habits {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            display: block;
+        }
+        /* GRID NAKA */
+        .gallery-grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;               
+            justify-content: center;
+            gap: 20px;
+                     }
+        .gallery-item {
+            flex: 0 1 calc(25% - 15px);
+            background: rgba(20, 20, 20, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+                      }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(113, 76, 3, 0.778);
+                            }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;           
+            object-fit: cover;
+            display: block;
+                          }
+        .gallery-caption {
+            padding: 12px;
+            text-align: center;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: #ffd54f;                
+                         }
+        @media only screen and (max-width: 992px) {
+            .gallery-item { flex: 0 1 calc(50% - 10px); }
+                                                  }
+        /* MODALS */
+        .modal {
+            background-color: #12161f !important;
+            border-radius: 8px;
+            border: 1px solid rgba(235, 13, 13, 0.1);
+            width: 90% !important;
+            max-width: 1150px !important;
+            max-height: 85vh !important;
+            overflow: hidden !important;
+              }
+        .modal .modal-content {
+            max-height: calc(85vh - 60px);
+            overflow-y: auto;             
+                              }
+        .modal .modal-footer {
+            background-color: #020203 !important;
+                             }
+        .modal img {
+            height: auto !important;      
+            max-height: 60vh;
+                    }
+        .my-font {
+            text-align: justify;
+            text-indent: 25px;
+                }
+        .title-font {
+            font-weight: bold;
+            color: red;
+                    }
+        @media only screen and (max-width: 600px) {
+            .modal .valign-wrapper { 
+                display: block; 
+                                   }
+                                                  }
+    </style>
+</head>
+
+<body> 
+
+<!--navbar-->
+<header>
+<nav class="nav-wrapper purple lighten-2"> 
+<div class="container" id="header-bg2">
+    <a href="#!" id="prepwise" class="s.habits">PrepWise | Study Habits</a>
+    <a href="#" class="sidenav-trigger hide-on-large-only" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="PrepWise.html" class="home">Home</a></li>
+        <li><a href="PrepWise.html#aboutinhome" class="about">About</a></li>
+        <li><a href="services.html" class="services">Services</a></li>
+        <li><a href="mastermind.html" class="our-story">Our Story</a></li>
+        <li><a href="#" class="contacts">Contact Us</a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+            </a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+            </a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Tiktok">
+            <i class="fab fa-tiktok"></i>
+            </a></li>
+    </ul>
+</div>
+</nav>
+
+<!-- the mobile menu te lagi nalang nakakalimutan lala niyan-->
+<ul class="sidenav yellow lighten-3" id="mobile-menu">
+    <li><a href="PrepWise.html">Home</a></li>
+    <li><a href="PrepWise.html#aboutinhome">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="mastermind.html">Our Story</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+</header> 
+
+<div class="image-container center-align">
+  <a href="s.habits.html" class="brand-logo">
+  </a>
+  <section class="gallery-bg-section">
+  <div class="gallery-container">
+    <a href="s.habits.html">
+      <img src="imgs/purple1.gif" class="Study-Habits" alt="Study Habits banner">
+    </a>
+
+    <!-- BASTA 'YUNG MGA GRIDS TUTUPAD PA AKO' -->
+    <div class="gallery-grid">
+
+      <a href="#modal1" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-1-cover.png" alt="StudyHabit1">
+        <div class="gallery-caption">Study Hack #1</div>
+      </a>
+
+      <a href="#modal2" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-2-same-time.png" alt="StudyHabit2">
+        <div class="gallery-caption">Study Hack #2</div>
+      </a>
+
+      <a href="#modal3" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-3-tidy.png" alt="StudyHabit3">
+        <div class="gallery-caption">Study Hack #3</div>
+      </a>
+
+      <a href="#modal4" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-4-breaks.png" alt="StudyHabit4">
+        <div class="gallery-caption">Study Hack #4</div>
+      </a>
+
+      <a href="#modal5" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-5-sleep.png" alt="StudyHabit5">
+        <div class="gallery-caption">Study Hack #5</div>
+      </a>
+
+      <a href="#modal6" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-6-review.png" alt="StudyHabit6">
+        <div class="gallery-caption">Study Hack #6</div>
+      </a>
+
+      <a href="#modal7" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-7-plan-ahead.png" alt="StudyHabit7">
+        <div class="gallery-caption">Study Hack #7</div>
+      </a>
+
+      <a href="#modal8" class="gallery-item modal-trigger">
+        <img src="imgs/habits-slide-8-no-phone.png" alt="StudyHabit8">
+        <div class="gallery-caption">Study Hack #8</div>
+      </a>
+
+    </div> <!-- PARTNER NG DIV SA ROW 176 -->
+  </div> <!-- PARTNER NG DIV SA ROW 170 -->
+  </section> <!--PARTNER NG SECTION SA 169-->
+</div> <!-- PARTNER NG DIV SA ROW 166 TE -->
+
+
+<!-- ================= MODALS HUHUHUHUH ( OUTSIDE NG MGA CARDS NALILITO NA AKPO ) ================= -->
+
+<!--STUDY HABITS 1: -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m5">
+            <img src="imgs/habits-slide-1-cover.png" alt="Study Habits cover: small routines, big results" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Start with small steps!</h4>
+            <p class="white-text my-font">The "Small routines, big results" study habit focuses on the power of consistency over intensity. Instead of relying on rare, exhausting study marathons, this approach encourages students to build simple, manageable daily routines that compound over time to produce major academic success. By breaking down large goals into small, everyday actions, students can overcome procrastination and make getting started feel effortless rather than overwhelming. Over weeks and months, these minor daily efforts build steady momentum, prevent last-minute cramming, and lead to significantly better grades and lower stress.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 2: -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-2-same-time.png" alt="Study at the same time every day" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Consistency is the Key!</h4>
+            <p class="white-text my-font">The "Same time, every day" study habit centers on establishing a steady, predictable daily schedule. By dedicating the exact same block of time to studying each day, students condition their brains to naturally get ready to focus at that specific hour. Having a fixed routine eliminates decision fatigue because students do not have to waste mental energy debating when to start their work—it simply becomes an automatic part of their day. Ultimately, this consistency turns studying into a reliable habit rather than a chore, making it much easier to stay disciplined and keep up with coursework.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-tex text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 3: -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-3-tidy.png" alt="Keep your space tidy" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Tidy Up!</h4>
+            <p class="white-text my-font">The "Keep your space tidy" study habit emphasizes the direct link between an organized environment and mental clarity. Maintaining a clean desk makes it significantly easier for students to begin their study sessions without procrastination and stay consistently on track with their tasks. When supplies like pens and notebooks are neatly arranged rather than scattered, visual clutter is eliminated, allowing the brain to concentrate on the material at hand rather than feeling overwhelmed by a messy workspace. Ultimately, a tidy study area creates an inviting, distraction-free zone that fosters productivity and helps students build a smoother, more effective daily learning routine.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 4: -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-4-breaks.png" alt="Take short breaks" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Take breaks</h4>
+            <p class="white-text my-font">The "Take short breaks" study habit encourages students to step away from their work for brief intervals to recharge. Resting for just a few minutes during study sessions helps keep the mind fresh, preventing mental exhaustion and burnout. By pausing to relax— whether by stretching, grabbing a warm drink, or simply giving their eyes a rest—students can return to their studies with renewed energy, sharper focus, and better overall productivity.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 5: -->
+<div id="modal5" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-5-sleep.png" alt="Get enough sleep" class="responsive-img z-depth-2" style="border-radius: 6px;"> 
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Get plenty of sleep!</h4>
+            <p class="white-text my-font">The "Get enough sleep" study habit highlights the vital role rest plays in academic performance. Getting a full night's sleep helps the brain process and remember what was studied during the day, turning short-term notes into lasting knowledge. Rather than staying up late to cram, prioritizing quality rest ensures students wake up refreshed, alert, and mentally prepared to retain new information and perform their best.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 6: -->
+<div id="modal6" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-6-review.png" alt="Review a little daily" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Review, review, review!</h4>
+            <p class="white-text my-font">The "Review a little daily" study habit encourages students to revisit their lessons in short, regular sessions rather than trying to absorb everything at once. Doing brief daily reviews beats cramming the night before an exam, as it steadily reinforces concepts and strengthens long-term memory. By spending just a few minutes each day going over notes, students reduce test-day stress, spot confusing topics early, and build lasting mastery over their coursework.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 7: -->
+<div id="modal7" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-7-plan-ahead.png" alt="Plan tomorrow tonight" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">Plan ahead</h4>
+            <p class="white-text my-font">The "Plan tomorrow tonight" study habit focuses on preparing a clear roadmap before the next day even begins. By writing down tomorrow's study tasks the night before, students can sit down and start working right away without wasting time or mental energy deciding what to tackle first. This simple evening routine eliminates morning hesitation, reduces overwhelm, and builds immediate momentum for a productive study session.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+<!--STUDY HABITS 8: -->
+<div id="modal8" class="modal">
+    <div class="modal-content">
+    <div class="row valign-wrapper">
+        <div class="col s12 m6">
+            <img src="imgs/habits-slide-8-no-phone.png" alt="Put your phone away" class="responsive-img z-depth-2" style="border-radius: 6px;">
+        </div>
+        <div class="col s12 m6">
+            <h4 class="center-align yellow-text text-lighten-4 title-font">No Phones! Strictly</h4>
+            <p class="white-text my-font">The "Put your phone away" (or "no phone") study habit emphasizes eliminating digital distractions to protect concentration. Keeping a phone out of reach while studying helps students stay focused on their work without the constant temptation to check notifications, messages, or social media. By creating physical distance from their devices, students can enter deeper states of concentration, finish assignments faster, and get far more out of every study session.</p>
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-light btn-flat purple-text text-accent-2">Close</a>
+    </div>
+</div>
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.modal').modal();          
+          $('.tooltipped').tooltip();
+          $('.scrollspy').scrollSpy();
+         });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charetset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>PrepWise Plans</title>
+    <style>
+        #home.plans {
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            background: #4a148c;
+            padding: 40px 0;
+        }
+        .purple-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        #h2fonts{
+            font-family: 'Alata' !important;
+                }
+        #h5fonts {
+            font-family: 'Alata' !important;
+            text-decoration: italic;
+        }
+        #h3fonts [
+
+        ]
+        .header-text { 
+            margin-left: 4px; 
+            margin-right: 4px; 
+                    }
+        a.header-text { 
+            margin: 4px; 
+                      }
+        .fixryan { 
+            padding: 0 12px;
+            color:#ffff;
+            text-decoration: #4a148c;
+                }
+        .plans {
+            text-align: center;
+            margin: 2rem 0 1rem;
+              }
+        /* PLANS ROW: para naman maayos */
+        .plans-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+                  }
+        .plans-row > .col { 
+            display: flex; 
+                          }
+        .plan-card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 0 24px;
+            text-align: center;
+                  }
+        .plan-card .card-image { 
+            padding-top: 24px; 
+                               }
+        .plan-card .card-image img { 
+            width: 90px; margin: 0 auto; 
+                                   }
+        .plan-card .card-content {
+            flex-grow: 1; 
+                                 }
+        .plan-card .price { 
+            font-size: 2.4rem; 
+            color: #6a1b9a; 
+            margin: 8px 0; 
+                          }
+        .plan-card .price small { 
+            font-size: 1rem; 
+            color: #9e9e9e;   }
+        .plan-card ul {
+            display: inline-block;
+            text-align: left;
+            margin-top: 12px; 
+                      }
+        .plan-card li {
+            margin: 8px 0; 
+                      }
+        .plan-card li i {
+            vertical-align: middle; 
+            margin-right: 6px; 
+                        }
+        .plan-card .card-action {
+            text-align: center; 
+                                }
+        .plan-card.featured { 
+            border: 3px solid #ffb300; 
+                            }
+
+        /* CAROUSEL */
+        #carousel1 { text-align: center; }
+        .carousel { height: 240px; }
+        .carousel .carousel-item { width: 160px; height: 160px; }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        </style>
+       
+</head>
+<body>
+    <!--navbar naiiyak na ako sez-->
+<header>
+<nav class="purple lighten-2">
+<div class="nav-wrapper container">
+    <a href="#" id="prepwise" class="brand-logo">PrepWise | Plans </a>
+    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="PrepWise.html">Home</a></li>
+        <li><a href="#aboutinhome">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mastermind.html">Our Story</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+            </a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Facebook"> 
+            <i class="fab fa-facebook"></i>
+            </a></li>
+        <li><a href="#" class="tooltipped btn-floating btn-small blue-grey darken-3" data-position="bottom" data-tooltip="Tiktok"> 
+            <i class="fab fa-tiktok"></i>
+            </a></li>
+        </ul>
+        <ul class="sidenav yellow lighten-3" id="mobile-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!--Home Section-->
+ <section id="home.plans" class="">
+    <div class="container center-align section">
+        <h2 id="h2fonts" class="amber-text text-accent-3header-text">Finding Your Plan with Prepwise and Wisey</h2>
+            <h5 id="h5fonts" class="purple-text text-lighten-1 header-text">PrepWise: Your semester, sorted</h5>
+                <a href="signup.html" class="btn yellow lighten-3 purple-text text-darken-2 header-text">Sign Up</a>
+                <a href="login.html" class="btn yellow lighten-3 purple-text text-darken-2 header-text">Log In</a>
+                <a href="plans.html" class="btn yellow lighten-3 purple-text text-darken-2 header-text">Find Your Plan</a>
+                    <img src="imgs/purple1.gif" alt="" class="purple-gif">
+    </div>
+</section>
+
+<!--header-->
+<section class="">
+<div class="fixryan">    
+    <h2 id="h3fonts" class="plans center-align">Find Your Plan with Wisey and PrepBuddies beside your side!</h2></div>
+</div>
+
+<!--Plans-->
+<div class="plans-row container">
+</div>
+
+<!--PLAN: Free Trial-->
+    <div class="col s9 l3 m3">
+            <div class="plan-card card">
+                 <div class="card-image">
+                        <img src="img/coin-peso.jpg" alt="">
+                        <a href="#" class="halfway-fab btn-floating yellow pulse">
+                        <i class="material-icons">favorite</i>
+                        </a>    
+                    </div>
+                <div class="card-content">
+                    <span class="card-title">Free Trial</span>
+                    <div class="price">₱0<small> / 7 days</small></div>
+                    <p>Try PrepWise before you commit.</p>
+                    <ul>
+                        <li><i class=="material-icons tiny purple-text text-darken-3"></i>Study plans</li></li>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Study techniques</li>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Chat with Wisey</li></li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <a href="signup.html">Start free trial</a>
+                </div>
+            </div>
+    </div>
+
+<!--PLAN: Monthly-->
+<div class="col s12 m6 l4">
+     <div class="plan-card card">
+                <div class="card-image">
+                    <img src="imgs/coin-peso.png" alt="">
+                    <a href="#" class="halfway-fab btn-floating yellow pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Monthly subscription</span>
+                    <div class="price">₱50<small> / month</small></div>
+                    <p>Avail your Monthly Subscription for only ₱50.00!</p>
+                    <ul>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Everything in Free Trial</li>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Study calendar</li>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Full study library</li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <a href="signup.html">Subscribe</a>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+<!--PLAN: Yearly Subscription-->
+<div class="col s12 m6 l4">
+            <div class="plan-card card featured">
+                <div class="card-image">
+                    <img src="imgs/coin-peso.png" alt="">
+                    <a href="#" class="halfway-fab btn-floating yellow pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Yearly subscription</span>
+                    <div class="price">₱500<small> / year</small></div>
+                    <p>Best value! Save ₱100 compared to paying monthly.</p>
+                    <ul>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Everything in Monthly</li>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Two months free</li>
+                        <li><i class="material-icons tiny purple-text text-darken-3">check</i>Early access to new tools!</li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <a href="signup.html">Subscribe</a>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+<!--carousell-->
+<div class="box">
+    <div id="carousel1" class="container">
+        <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="imgs/coin-peso.png"></a>
+    <a class="carousel-item" href="#two!"><img src="imgs/coin-peso.png"></a>
+    <a class="carousel-item" href="#three!"><img src="imgs/coin-peso.png"></a>
+        </div>
+    </div>
+</div>
+</section>
+
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+  <script>
+     $(document).ready(function(){
+    $('.tooltipped').tooltip();
+    $('.carousel').carousel();
+  });
+  </script>
+</body>
+</html>
